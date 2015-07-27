@@ -20,6 +20,7 @@ int main(void)
     			printf("1\n");
 		else
     			printf("0\n");
-		usleep(250000);
+		usleep(150000);
+
 	}
 }
