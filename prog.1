@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+void
+show_results(char mychar)
+{
+	printf("Your letter is %c\n", mychar);	
+
+	printf("Your letter in ASCII is %d\n", mychar);
+
+	printf("Your letter in hexadecimal format is %x\n", mychar);
+}
+
+int
+askq(void)
+{
+	char yorn;
+	char answer;
+	printf("Please enter a letter: ");
+	answer = getchar();
+
+
+	printf("You entered: %c. Is this correct? Enter y or n.\n", answer);
+	
+	yorn=getchar();
+	if(yorn=='\n')
+	{
+		/* input buffer still has the new line in it*/
+		yorn=getchar();
+	}
+	
+	if(yorn == 'y')
+	{
+		printf("You answered yes.\n");
+		show_results(answer);
+		return answer;
+	}
+	
+	if (yorn =='n')
+	{
+		printf("You entered no.");
+		askq();
+		return answer;
+	}
+
+	printf("you did not answer y or n\n");
+	return answer;
+}
+
+
+int main(int argc, char *argv[])
+{
+	char mychar;
+
+
+	mychar = askq();
+	return 0;
+}
