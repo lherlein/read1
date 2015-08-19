@@ -19,12 +19,12 @@ int main(void)
 	{
 		if (digitalRead(4))
 		{
-    			printf("1\n");
+//    			printf("1\n");
 			digitalWrite (17, HIGH);
 		}
 		else
     		{
-			printf("0\n");
+//			printf("0\n");
 			digitalWrite (17, LOW);
 		}
 //	usleep(150000);
