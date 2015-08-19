@@ -1,0 +1,6 @@
+#include <stdir.h>
+#include <wiringPi.h>
+#include <unistd.h>
+
+int main(void)
+
