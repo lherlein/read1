@@ -12,3 +12,7 @@ git:
 
 led: led.c
 	gcc -o led led.c -l wiringPi
+
+
+all: blink1.c
+	gcc -o blink1 blink1.c -l wiringPi
