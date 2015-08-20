@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <wiringPi.h>
-#include <unistd.h> 
+#include <unistd.h>
 
 int main(void)
 {
